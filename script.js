@@ -11,7 +11,15 @@ $(".saveBtn").on("click", function(){
     
 })
 
+$(".btntime").on("click",function () {
+    var d = new Date();
+    console.log(d)
+    d.getHours();
+    
+    document.getElementById("demo").innerHTML = d;
+    
 
+ });
 // hour updater
 
 

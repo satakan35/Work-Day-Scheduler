@@ -14,11 +14,13 @@
 ​
 <body>
   <!--added current time-->
-  <button onclick="myFunction()">time</button>
+  <div class="sedat">
+  <button class="btntime">time</button>
+  
   <p id="demo"></p>
-
-
-  <header class="jumbotron">
+</div>
+  
+<header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
@@ -101,16 +103,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 ​
     <script src="script.js"></script>
-    <script>
+    <!-- <script>
       function myFunction() {
         var d = new Date();
-        d.setHours(0);
+        console.log(d)
+        d.getHours();
+        
         document.getElementById("demo").innerHTML = d;
         
 
-      }
+      };
 
-      </script>
+      </script> -->
 </body>
 ​
 </html>
